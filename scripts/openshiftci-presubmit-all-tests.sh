@@ -10,7 +10,6 @@ export GITHUB_TOKEN=`cat $KAM_GITHUB_TOKEN_FILE`
 # show commands
 set -x
 export CI="prow"
-export GITHUB_TOKEN=`cat $KAM_GITHUB_TOKEN`
 export PRNO="$(jq .refs.pulls[0].number <<< $(echo $JOB_SPEC))"
 make prepare-test-cluster
 make bin
