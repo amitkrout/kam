@@ -13,12 +13,6 @@ export GOLANGCI_LINT_CACHE="/tmp/.cache"
 id
 whoami
 echo $HOME
-ssh-keygen -q -t rsa -N '' <<< ""$'\n'"y" 2>&1 >/dev/null
-echo "---------------------"
-cat ~/.ssh/id_rsa
-echo "---------------------"
-cat ~/.ssh/id_rsa.pub
-echo "---------------------"
 # git describe --always --long --dirty
 # go version
 # go env
